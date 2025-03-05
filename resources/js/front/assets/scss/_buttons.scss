@@ -1,0 +1,230 @@
+.btn {
+    font-weight: 600;
+}
+
+.btn-xs,
+.btn-group-xs > .btn {
+    --bs-btn-border-color: none !important;
+    padding: 0.2rem !important;
+    font-size: 0.85rem !important;
+    line-height: 1 !important;
+    border-radius: 0.2rem !important;
+}
+
+.btn-success,
+.btn-primary {
+    color: #fff !important;
+
+    span {
+        color: #fff !important;
+    }
+}
+
+.btn-success:hover,
+.btn-outline-success:hover,
+.btn-primary:hover,
+.btn-outline-primary:hover {
+    color: #fff !important;
+}
+
+.btn-success:not(:disabled):not(.disabled):active,
+.btn-success:not(:disabled):not(.disabled).active,
+.btn-outline-success:not(:disabled):not(.disabled):active,
+.btn-outline-success:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.btn-outline-primary:not(:disabled):not(.disabled).active {
+    color: #fff;
+}
+
+.btn-outline-purple-dark {
+    color: $darkpurple !important;
+    border-color: $darkpurple !important;
+
+    * {
+        color: $darkpurple !important;
+        border-color: $darkpurple !important;
+    }
+
+    &:hover {
+        color: #fff !important;
+        background-color: $darkpurple !important;
+        border-color: $darkpurple !important;
+
+        * {
+            color: #fff !important;
+            background-color: $darkpurple !important;
+            border-color: $darkpurple !important;
+        }
+    }
+}
+
+.btn-purple-dark {
+    color: #fff !important;
+    background-color: $darkpurple !important;
+    border-color: $darkpurple !important;
+
+    &:hover {
+        color: #fff !important;
+        background-color: #6335a6 !important;
+    }
+}
+
+.btn-outline-secondary {
+    path,
+    circle,
+    line,
+    ellipse {
+        color: $gray-600;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+        svg,
+        path,
+        line {
+            color: #fff !important;
+        }
+    }
+}
+
+.btn-blue {
+    color: #fff !important;
+    background-color: $blue !important;
+    border-color: $blue !important;
+
+    &:hover {
+        color: #fff !important;
+        background-color: #1c5fae !important;
+        border-color: #1c5fae !important;
+    }
+}
+
+.btn-outline-blue {
+    color: $blue !important;
+    border-color: $blue !important;
+
+    &:hover {
+        color: #fff !important;
+        background-color: #1c5fae !important;
+        border-color: #1c5fae !important;
+    }
+}
+
+.btn-danger,
+.btn-warning {
+    color: #fff;
+}
+
+.btn-warning {
+    background-color: #dfb126;
+    border-color: #dfb126;
+
+    &:active {
+        color: #fff !important;
+        background-color: #dbbc60;
+        border-color: #dbbc60;
+    }
+
+    &:hover {
+        color: #fff;
+        background-color: #dbbc60;
+        border-color: #dbbc60;
+    }
+
+    &:disabled {
+        color: #fff;
+        background-color: #dbbc60;
+        border-color: #dbbc60;
+    }
+}
+
+.btn-outline-danger:not(:disabled):not(.disabled):active,
+.btn-outline-warning:not(:disabled):not(.disabled):active,
+.btn-outline-danger:not(:disabled):not(.disabled):hover,
+.btn-outline-warning:not(:disabled):not(.disabled):hover {
+    color: #fff;
+}
+
+//.btn-danger {
+//  path, circle, line, ellipse {
+//    color: $red!important;
+//  }
+//}
+
+.btn-outline-danger {
+    path,
+    circle,
+    line,
+    ellipse {
+        color: $red;
+    }
+
+    &:hover {
+        path,
+        circle,
+        line,
+        ellipse {
+            color: white;
+        }
+    }
+}
+
+.btn-vk {
+    background-color: #337ab7;
+    border-color: #2e6da4;
+
+    &:hover,
+    &:focus {
+        background-color: #286090;
+        border-color: #204d74;
+        color: white;
+    }
+
+    &:active {
+        background-color: #204d74;
+        border-color: #122b40;
+        color: white;
+    }
+}
+
+.btn-ok {
+    background-color: #ee8208;
+    border: 1px solid #d76204;
+
+    &:hover,
+    &:focus {
+        background-color: #d76204;
+        color: white;
+    }
+
+    &:active {
+        background-color: #c75f04;
+        color: white;
+    }
+}
+
+.btn-fb {
+    background-color: #3b5998;
+
+    &:hover,
+    &:focus {
+        background-color: #38427e;
+        color: white;
+    }
+
+    &:active {
+        background-color: #343468;
+        color: white;
+    }
+}
+
+.btn-vk,
+.btn-ok,
+.btn-fb {
+    * {
+        color: white;
+    }
+}

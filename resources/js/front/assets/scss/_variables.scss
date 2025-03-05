@@ -1,0 +1,63 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: "Montserrat";
+$font-size-base: .9rem;
+$font-weight-base: 500;
+$line-height-base: 1.6;
+
+// Colors
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+$blue: #388cca;
+$indigo: #6574cd;
+$purple: #9561e2;
+$lightpurple: #c19bff;
+$darkpurple: #7846c0;
+$pink: #f66d9b;
+$red: #dc3545;
+$whitered: #fa9d8c;
+$orange: #f2bb08;
+$whiteorange: #f9d96c;
+$green: #04aa6d;
+$darkgreen: #449f4d;
+$whitegreen: #a7dc8b;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+$light_silver: #b3b3b3;
+$silver: #d0d0d0;
+$silver_hover: #878787;
+$gray: #5e5e5e;
+
+// Links
+//$link-hover-color: $silver_hover;
+//$link-decoration: none;
+//$link-hover-decoration: none;
+
+// placeholder-loading
+$ph-direction: ltr !default;
+$ph-bg: #fff !default;
+$ph-color: #eceef3 !default;
+$ph-border: 1px solid darken($ph-bg, 10%) !default;
+$ph-border-radius: auto !important;
+
+$ph-cols: 12 !default;
+$ph-cols-remove-odd: true !default;
+$ph-gutter: 30px !default;
+$ph-spacer: 15px !default;
+
+$ph-avatar-border-radius: 50% !default;
+
+$ph-animation-duration: 0.8s !default;
+
+

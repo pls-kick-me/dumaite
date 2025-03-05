@@ -1,0 +1,133 @@
+.ios-switch {
+    display: inline-block;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+
+    i {
+        position: relative;
+        display: inline-block;
+        margin-right: 0.5rem;
+        width: 46px;
+        height: 26px;
+        background-color: #9d9d9d;
+        border-radius: 23px;
+        vertical-align: text-bottom;
+        transition: all 0.3s linear;
+
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: -1px;
+            top: -1px;
+            width: 44px;
+            height: 24px;
+            background-color: #e2e3e5;
+            border-radius: 11px;
+            transform: translate3d(2px, 2px, 0) scale3d(1, 1, 1);
+            transition: all 0.25s linear;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: -1px;
+            top: -1px;
+            width: 24px;
+            height: 24px;
+            background-color: #fff;
+            border-radius: 11px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 54);
+            transform: translate3d(2px, 2px, 0);
+            transition: all 0.2s ease-in-out;
+        }
+    }
+
+    &:active {
+        i::after {
+            width: 28px;
+            transform: translate3d(2px, 2px, 0);
+        }
+
+        input:checked + i::after {
+            transform: translate3d(16px, 2px, 0);
+        }
+    }
+
+    input {
+        display: none;
+
+        &:checked + i {
+            background: rgba(135, 135, 135, 1);
+            background: linear-gradient(210deg, #187755 32%, $green 100%);
+
+            &::before {
+                transform: translate3d(18px, 2px, 0) scale3d(0, 0, 0);
+            }
+
+            &::after {
+                transform: translate3d(22px, 2px, 0);
+            }
+        }
+    }
+}
+
+.ios-switch.blue {
+    input {
+        &:checked + i {
+            background-color: $blue;
+        }
+    }
+}
+
+.ios-switch.gradient {
+    input {
+        &:checked + i {
+            background: rgba(135, 135, 135, 1);
+            background: linear-gradient(210deg, #248cca 32%, #00e7ff 100%);
+        }
+    }
+}
+
+.ios-switch.red {
+    input {
+        &:checked + i {
+            background: rgba(135, 135, 135, 1);
+            background: linear-gradient(210deg, #b03541 32%, #ff0017 100%);
+        }
+    }
+}
+
+.ios-switch.purple {
+    input {
+        &:checked + i {
+            background: rgba(135, 135, 135, 1);
+            background: linear-gradient(210deg, #7846c0 32%, #9561e2 100%);
+        }
+    }
+}
+
+.ios-switch.small {
+    i {
+        width: 30px;
+        height: 17px;
+
+        &::before {
+            width: 28px;
+            height: 15px;
+        }
+
+        &::after {
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+    input {
+        &:checked + i {
+            &::after {
+                transform: translate3d(15px, 2px, 0);
+            }
+        }
+    }
+}
